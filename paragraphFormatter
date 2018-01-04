@@ -1,12 +1,11 @@
-var prompt = require('prompt');
+import sys
+import numpy as np
 
-  prompt.start();
+def main():
+    book = sys.argv[0]
+    chapter = sys.argv[1]
+    starting_verse = sys.argv[2]
+    end_verse = sys.argv[3]
 
-  prompt.get(['book', 'chapter', 'start_verse', 'end_verse'], function (err, result) {
-
-    console.log('Command-line input received:');
-    console.log('book: ' + result.book);
-    console.log('chapter: ' + result.chapter);
-    console.log('start_verse: ' + result.start_verse);
-    console.log('end_verse: ' + result.end_verse;
-  });
+    print 'You are looking for ' + book + ' ' +
+    chapter + ':' + starting_verse + '-' + end_verse
