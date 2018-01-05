@@ -1,5 +1,5 @@
 import sys
-import numpy as np
+import json
 
 def main():
     book = sys.argv[0]
@@ -9,3 +9,5 @@ def main():
 
     print 'You are looking for ' + book + ' ' +
     chapter + ':' + starting_verse + '-' + end_verse
+
+    data = json.load(open('ESV.json'))
