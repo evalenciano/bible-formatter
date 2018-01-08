@@ -10,6 +10,6 @@ def main():
     print('You are looking for ' + book + ' ' +
     chapter + ':' + starting_verse + '-' + end_verse)
 
-    data = json.load(open('ESV.json'))
+    data = json.load(open('NIV.json'))
 
 main()
